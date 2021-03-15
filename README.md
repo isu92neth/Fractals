@@ -1,7 +1,6 @@
 # Fractals
-Individual project
 
-I have designed and implemented a software that would plot two of the most popular fractals: **Mandelbrot set** and **Julia set**.
+Designed and implemented a software that would plot two of the most popular fractals: **Mandelbrot set** and **Julia set**.
 
 The programme accepts user input arguments.
 The user should at least specify which set to plot.
@@ -20,3 +19,8 @@ For the **Julia** set the user should give 0 or 2 arguments.
 |Number of iterations|1000|           |
 |C           |-0.4+0.6i       |Only for Julia set|
 
+How to run(Examples):
+  - **java Fractal Mandelbrot -0.5 0.5 -0.1 1 1000**
+    - The region of interest for the image should be from -0.5<real<0.5 and -0.1<complex<1 and for each point you need to do 1000 iterations before deciding that it is in the set
+  - **java Fractal Julia -0.5 0.156 1000**
+    - Plot the Julia set for C = -0.5 + 0.156i with 1000 iterations for each point. The region of interest in the complex plane is 1 < real part < 1 and -1< complex part<1 which cannot be modified
